@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        form span {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+        }
+
+        form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <span>Formularz</span>
+        <label for="email">e-mail</label>
+        <input type="email" name="email" id="email" placeholder="e-mail">
+        <label for="telefon">telefon</label>
+        <input type="tel" name="telefon" id="telefon" placeholder="telefon">
+        <label for="nazwisko">imię i nazwisko</label>
+        <input type="text" name="nazwisko" id="nazwisko" placeholder="imię i nazwisko">
+        <button>Wyślij</button>
+    </form>
+</body>
+</html>
