@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #e9e9e9;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9e9e9;
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 16.66%;
+            width: 100%;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "welcome box1 box2 boxd"
+                "welcome box3 box3 boxd";
+            gap: 20px;
+            padding: 30px;
+            flex: 1;
+        }
+
+        .welcome {
+            grid-area: welcome;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+
+        .boxd {
+            grid-area: boxd;
+        }
+
+        .box1, .box2, .box3, .boxd{
+            border: 1px solid #e9e9e9;
+            padding: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            background-color: #e9e9e9;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="#">Strona główna</a>
+          <a href="#">O nas</a>
+          <a href="#">Kontakt</a>
+        </nav>
+      </header>
+    
+      <main class="grid-container">
+        <section class="welcome">
+          <h1>Witaj na naszej<br>
+            skomplikowanej<br>
+            stronie!</h1>
+        </section>
+    
+        <div class="box1"> 
+          <h3>Funkcja 1</h3>
+          <p>Opis funkcji 1...</p>
+        </div>
+        <div class="box2"> 
+          <h3>Funkcja 2</h3>
+          <p>Opis funkcji 2...</p>
+        </div>
+        <div class="box3"> 
+            <h3>Funkcja 3</h3>
+            <p>Opis funkcji 3...</p>
+        </div>
+        <div class="boxd"> 
+          <h3>Dodatkowe informacje</h3>
+          <p>...</p>
+        </div>
+      </main>
+    
+      <footer class="footer">
+        &copy; 2023 Skomplikowana strona z flexboxem. Wszelkie prawa zastrzeżone.
+      </footer>
+</body>
+</html>

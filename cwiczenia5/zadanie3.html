@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .row {
+            display: flex;
+            margin: 20px;
+            margin-bottom: -15px;
+            gap: 10px;
+        }
+
+        .equal-width {
+            flex: 1;
+            background: lightblue;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .row2 {
+            display: flex;
+            margin: 20px;
+            gap: 10px;
+        }
+
+        .fixed-percentage {
+            background: lightblue;
+            width: 40%;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .flexible {
+            background: lightblue;
+            flex: 1;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="equal-width">Element 1</div>
+        <div class="equal-width">Element 2</div>
+        <div class="equal-width">Element 3</div>
+    </div>
+
+    <div class="row2">
+        <div class="fixed-percentage">Element 4</div>
+        <div class="flexible">Element 5</div>
+    </div>
+</body>
+</html>
